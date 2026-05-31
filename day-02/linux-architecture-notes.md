@@ -3,7 +3,7 @@
 ## Architecture of Linux:
 The Linux architecture defines how different components of the system interact with each other to manage hardware resources, run applications, and provide a stable and secure computing environment. Linux follows a layered architecture, where each layer has a specific role and responsibility.
 
-![snapshot](/images/Linux_Architecture.png)
+![snapshot](images/linux_arch.png)
 
 ## Core components of Linux Architecture:
 - **Kernel:**
@@ -16,9 +16,11 @@ The Linux architecture defines how different components of the system interact w
         - **Device management –** Controls hardware devices through device drivers
         - **Application interaction –** Acts as a bridge between applications and hardware
         - **Security –** Enforces access control and system-level security mechanisms
+
 - **User Space (Shell & User Application):**
     - The topmost layer where users interact via Command Line Interface (CLI) or Graphical User Interface (GUI), including applications like web browsers and terminal utilities.
     - Applications interact with the kernel using **system calls**.
+
 - **Init / systemd:**
     - The **init** system is the first user-space process started by the kernel during boot, usually with Process ID (**PID 1**).
     - In most modern Linux distributions use **systemd** as their default init system.
@@ -36,8 +38,8 @@ The Linux architecture defines how different components of the system interact w
 - Throughout its lifecycle, a process moves through several distinct structural states:
     - **Running (R)** → Actively using CPU.
     - **Sleeping (S)** → Waiting for event (I/O, resource).
-    - **Stopped** (T) → Suspended (e.g., via `Ctrl+Z`).
-    - **Zombie** (Z) → Finished execution but not yet cleaned up by parent.
+    - **Stopped (T)** → Suspended (e.g., via `Ctrl+Z`).
+    - **Zombie (Z)** → Finished execution but not yet cleaned up by parent.
     - **Idle (D)** → Kernel threads waiting for work.
 - Linux controls processes using signals, common signals:
     - `SIGTERM` → Graceful stop
@@ -46,7 +48,7 @@ The Linux architecture defines how different components of the system interact w
 
 ## What systemd does in Linux and why it matters
 
-### Main functions of systemd :
+### Main functions of systemd:
 - **Boot Management:** Starts the operating system and loads required services during startup.
 - **Service Management:** Controls system services (daemons) such as web servers, databases, and networking using commands like `systemctl start` or `systemctl stop`.
 - **Dependency Handling:** Ensures services start in the correct order based on dependencies.
