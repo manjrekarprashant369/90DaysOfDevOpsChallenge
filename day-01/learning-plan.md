@@ -6,13 +6,13 @@ After 9+ years in IT across Networking, Cybersecurity, and GRC, I am officially 
 
 Over the years, I worked closely with infrastructure, security controls, governance, troubleshooting, and enterprise operations. Now, I want to combine all those experiences with:
 
-☁️ Cloud Engineering
-
-⚙️ DevOps
-
-🔐 DevSecOps
-
-🏗️ Cloud Architecture
+    ☁️ Cloud Engineering
+    
+    ⚙️ DevOps
+    
+    🔐 DevSecOps
+    
+    🏗️ Cloud Architecture
 
 ## My understanding of DevOps
 
