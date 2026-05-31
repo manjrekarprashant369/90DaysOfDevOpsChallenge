@@ -1,9 +1,10 @@
 # Linux Commands Cheat Sheet
 
 ## ⚙️ Process Management
+
 **Manage system resources, view running tasks, and control process execution.**
 
-| Command | Description |
+| Command | Purpose |
 | --- | --- |
 | `top` or `htop` | Display real-time, interactive views of running processes and resource consumption. |
 | `ps aux`  | List all currently running processes with detailed info and user ownership. |
@@ -16,9 +17,10 @@
 | `renice <PID>`  | Change priority of running process. |
 
 ## 📂 File System
+
 **Navigate directories, check disk space, and manage file permissions.**
 
-| Command | Description |
+| Command | Purpose |
 | --- | --- |
 | `df -h` | Display human-readable disk space usage for all mounted drives. |
 | `du -sh *`  | View human-readable disk usage for files and folders in the current directory. |
@@ -29,9 +31,10 @@
 | `find /path -name "<filename>"` | Locate a file or directory by its name. |
 
 ## 🌐 Networking Troubleshooting
+
 **Test connectivity, inspect open ports, and resolve network issue.**
 
-| Command | Description |
+| Command | Purpose |
 | --- | --- |
 | `ip addr`  | View all network interfaces, IP addresses, and link states. |
 | `ping <host>` | Test network and internet connectivity to a host or IP. |
@@ -41,5 +44,5 @@
 | `nslookup <host>` | Query DNS servers to resolve IP addresses or check DNS configuration. |
 | `systemctl restart <service>` |  Restart a failing network service (e.g., `sshd` or `networking`). |
 
-### Reference: 
-https://www.geeksforgeeks.org/linux-unix/linux-commands-cheat-sheet/
+### References: 
+- https://www.geeksforgeeks.org/linux-unix/linux-commands-cheat-sheet/
