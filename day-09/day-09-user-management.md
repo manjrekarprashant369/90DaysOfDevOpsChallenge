@@ -51,7 +51,7 @@ Assign users:
 
 ---
 
-## Task 4: Shared Directory ****
+## Task 4: Shared Directory
 
 1. Create directory: `/opt/dev-project`
 2. Set group owner to `developers`
@@ -115,13 +115,13 @@ Assign users:
 **To Create Users with Home Directory:**
 
 ```bash
-sudo useradd -m <username>
+sudo useradd -m <user_name>
 ```
 
 **To Set Password:**
 
 ```bash
-sudo passwd <username>
+sudo passwd <user_name>
 ```
 
 **To Verify Created Users:**
@@ -139,7 +139,7 @@ ls -l /home
 **To Create Groups:**
 
 ```bash
-sudo groupadd <groupname>
+sudo groupadd <group_name>
 ```
 
 **To Verify Created Groups:**
@@ -151,7 +151,7 @@ grep -E "group1|group2" /etc/group
 **To Assign Users to Groups:**
 
 ```bash
-sudo usermod -aG <groupname> <username>
+sudo usermod -aG <group_name> <user_name>
 
 # -a = append
 # -G = supplementary groups
@@ -161,11 +161,11 @@ sudo usermod -aG <groupname> <username>
 **To Verify Users Added in Groups:**
 
 ```bash
-groups <username>
+groups <user_name>
 
 # OR
 
-id <username>
+id <user_name>
 ```
 
 **To Change Group Ownership:**
@@ -200,7 +200,7 @@ ls -ld </path/to/directory>
 ls -l </path/to/file>
 ```
 
-d**To Create File as Specific User:**
+**To Create File as Specific User:**
 
 ```bash
 sudo -u <user_name> touch </path/to/file>
