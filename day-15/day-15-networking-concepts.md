@@ -154,6 +154,8 @@ Formula:
 
 **Output:**
 
+![snapshot](screenshots/3_ss_tulpn.png)
+
 - Port 22 → SSH
 - Port 53 → DNS
 
